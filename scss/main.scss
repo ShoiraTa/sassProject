@@ -1,4 +1,8 @@
-h1{
-     color: red;
-     display: flex;
+@import "navbar";
+
+*{
+   margin: 40;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Kumbh Sans", sans-serif;
 }
