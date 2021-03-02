@@ -14,10 +14,10 @@
   z-index: 10;
   position: relative;
   background: $light;
+
   @extend %align-center;
 
   &__logo {
-    color: $dark;
     cursor: pointer;
     text-decoration: none;
     margin-left: 2rem;
