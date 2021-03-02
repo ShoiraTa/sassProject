@@ -10,10 +10,10 @@
   display: flex;
   justify-content: space-between;
   height: 4rem;
-  background: $lime;
   padding: 0.5rem;
   z-index: 10;
   position: relative;
+  background: $light;
   @extend %align-center;
 
   &__logo {
@@ -21,6 +21,9 @@
     cursor: pointer;
     text-decoration: none;
     margin-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $lime;
   }
 
   &__bars {
@@ -38,6 +41,7 @@
 
   &__menu {
     @extend %align-center;
+
     list-style: none;
     text-align: center;
     margin-right: 24px;
@@ -48,9 +52,31 @@
 
     &-links {
       color: $dark;
+
       @extend %align-center;
+
       text-decoration: none;
       padding: 0 1rem;
+
+      &:hover {
+        color: $lime;
+        transition: all 0.3s ease;
+      }
+    }
+
+    #button {
+      padding: 12px 24px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background: $lime;
+      margin-left: 16px;
+      color: $light;
+
+      &:hover {
+        background: $oragered;
+        transition: all 0.3s ease;
+      }
     }
   }
 }
